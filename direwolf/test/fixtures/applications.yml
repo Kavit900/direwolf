@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coverletter: MyString
+  status: 
+  dateOfApp: 2014-09-08 19:55:58
+  jobId: 
+  userId: 
+
+two:
+  coverletter: MyString
+  status: 
+  dateOfApp: 2014-09-08 19:55:58
+  jobId: 
+  userId: 
