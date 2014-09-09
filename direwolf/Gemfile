@@ -37,3 +37,5 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
+#gem 'mysql2', withmysqlinclude: 'C:\ruby\mysql-connector-c-6.1.5-winx64\mysql-connector-c-6.1.5-winx64'

@@ -1,7 +1,7 @@
 class CreateTags < ActiveRecord::Migration
   def change
     create_table :tags do |t|
-      t.int :id
+      t.integer :tagId
       t.string :tag
 
       t.timestamps

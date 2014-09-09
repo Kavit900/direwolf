@@ -1,7 +1,7 @@
 class CreateFields < ActiveRecord::Migration
   def change
     create_table :fields do |t|
-      t.int :id
+      t.integer :fieldId
       t.string :name
 
       t.timestamps

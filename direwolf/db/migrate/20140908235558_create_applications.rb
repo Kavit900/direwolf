@@ -1,11 +1,11 @@
 class CreateApplications < ActiveRecord::Migration
   def change
     create_table :applications do |t|
-      t.string :coverletter
-      t.int :status
+      t.string :coverLetter
+      t.integer :status
       t.timestamp :dateOfApp
-      t.int :jobId
-      t.int :userId
+      t.integer :jobId
+      t.integer :userId
 
       t.timestamps
     end
