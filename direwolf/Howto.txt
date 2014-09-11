@@ -14,3 +14,4 @@ Done installing documentation for mysql2 after 0 seconds
 1 gem installed
 
 
+2.) https://github.com/tzinfo/tzinfo/wiki/Resolving-TZInfo::DataSourceNotFound-Errors
