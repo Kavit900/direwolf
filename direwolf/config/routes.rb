@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
   end
-
+  root :to => 'sessions#new'
   resources :sessions
 
   # The priority is based upon order of creation: first created -> highest priority.
