@@ -11,7 +11,8 @@ class AdminController < ApplicationController
   end
 
   def add_employers
-    @user = User.new(:role => "EMP", :name => params[:name])
+    @user = User.new(:role => "EMP")
+    @user[:name] = params[:name]
     @user[:password] = params[:password]
     @user[:email] = params[:email]
     @user.save

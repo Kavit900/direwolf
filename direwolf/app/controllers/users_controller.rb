@@ -20,8 +20,6 @@ class UsersController < ApplicationController
     else
       @user.role = User.USR_ROLE
     end
-    puts "User Role:"
-    puts @user.role
   end
 
   # GET /users/1
@@ -33,7 +31,15 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(field_params)
-
+    # TODO: DRY
+    role = field_params[:user_role]
+    if role == User.EMP_ROLE then
+      @user.role = User.EMP_ROLE
+    elsif role == User.ADM_ROLE then
+      @user.role = User.ADM_ROLE
+    else
+      @user.role = User.USR_ROLE
+    end
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'Job Seeker was successfully created.' }

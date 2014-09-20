@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140916023551) do
+ActiveRecord::Schema.define(version: 20140920040942) do
 
   create_table "applications", force: true do |t|
     t.string   "coverLetter"
@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(version: 20140916023551) do
   end
 
   create_table "fields", force: true do |t|
-    t.integer  "fieldId"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -36,6 +35,12 @@ ActiveRecord::Schema.define(version: 20140916023551) do
     t.string   "title"
     t.datetime "deadline"
     t.boolean  "isDeleted"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jobseekers", force: true do |t|
+    t.string   "search"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,7 +1,7 @@
 <h2>ADD Employers</h2>
 
 <div class="addEmployer">
-	 <%= form_tag(:action => 'add_employers') do %>
+	 <%= form_tag(controller => 'users', :action => 'add_employers') do %>
    <table>
    	<tr>
    		<td><%= label_tag(:name) %></td>

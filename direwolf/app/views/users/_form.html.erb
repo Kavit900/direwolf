@@ -1,3 +1,4 @@
+
 <%= form_for(@user) do |u| %>
     <% if @user.errors.any? %>
         <div id="error_explanation">
@@ -33,6 +34,11 @@
       <%= u.text_field :email %>
     </div>
     <div class="user">
+      <%= u.label :phone %><br>
+      <%= u.text_field :phone %>
+    </div>
+    <% if @user.role.eql?("USR") %>
+    <div class="user">
       <%= u.label :skills %><br>
       <%= u.text_area :skills, cols: 80 %>
     </div>
@@ -40,10 +46,14 @@
       <%= u.label :resume %><br>
       <%= u.text_area :resume, cols: 80 %>
     </div>
-    <div class="user">
-      <%= u.label :phone %><br>
-      <%= u.text_field :phone %>
-    </div>
+    <% end %>
+    <% if @user.role.eql?("EMP") %>
+        <div class="user">
+          <%= u.label "Contact Name" %><br>
+          <%= u.text_field :contactName %>
+        </div>
+    <% end %>
+    <br/>
     <div class="actions">
       <%= u.submit %>
     </div>

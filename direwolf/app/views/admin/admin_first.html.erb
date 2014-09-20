@@ -2,8 +2,6 @@
 
 <%= link_to("Add more admin",{:action => 'add_admin'}) %>
 <br />
-<%= link_to("Register employers",{:action => 'add_employer'}) %>
+<%= link_to "Register employers", "http://localhost:3000/users/new?role=EMP" %> <!--  TODO: fix this  -->
 <br />
 <%= link_to("Add Fields",{:action => 'admin_add_field'}) %>
-<br />
-<%= link_to("Logout",{:action => 'logout'}) %>
