@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     delete 'logout' => :destroy
   end
   root :to => 'sessions#new'
+  match ':controller(/:action(/:id))', :via => [:get, :post]
+
   resources :sessions
 
   # The priority is based upon order of creation: first created -> highest priority.

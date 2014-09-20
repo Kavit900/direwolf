@@ -45,6 +45,12 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def emp_job_creates
+     @job = Jobs.new(:title => params[:title])
+     @job[:deadline] = params[:deadline]
+     redirect_to(:action => 'admin_first')
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_field
