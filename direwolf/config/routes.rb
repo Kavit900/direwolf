@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   #get 'sessions/destroy'
 
   resources :fields
-
+  resources :jobs
   resources :users
   controller :sessions do
     get 'login' => :new

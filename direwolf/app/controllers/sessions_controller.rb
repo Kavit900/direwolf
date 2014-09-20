@@ -20,13 +20,14 @@ class SessionsController < ApplicationController
 
   def index
     if session[:user_role].eql? User.USR_ROLE
-      render 'show_usr'
+      #render ''
+      redirect_to(:controller => 'jobseekers', :action => "index")
     end
     if session[:user_role].eql? User.EMP_ROLE
-      redirect_to(:controller => 'users',:action => 'employer_first')
+      redirect_to(:action => 'employer_first')
     end
     if session[:user_role].eql? User.ADM_ROLE
-      redirect_to(:controller => 'admin',:action => 'admin_first')
+      redirect_to(:action => 'admin_first')
     end
   end
 
