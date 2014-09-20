@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  layout false
   before_action :set_field, only: [:show, :edit, :update, :destroy]
 
   # GET /users
