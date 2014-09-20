@@ -5,8 +5,6 @@ class SessionsController < ApplicationController
 
   def create
       user = User.find_by_username(params[:username])
-      puts params[:password]
-      puts params[:username]
       if (!user.nil? and user.authenticate(params[:password]))
         session[:user_id] = user.id
         session[:user_role] = user.role
@@ -22,15 +20,12 @@ class SessionsController < ApplicationController
 
   def index
     if session[:user_role].eql? User.USR_ROLE
-      puts "show_usr"
       render 'show_usr'
     end
     if session[:user_role].eql? User.EMP_ROLE
-      puts "show_emp"
       render 'show_emp'
     end
     if session[:user_role].eql? User.ADM_ROLE
-      #render 'show_adm'
       redirect_to(:controller => 'admin',:action => 'admin_first')
     end
   end

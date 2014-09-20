@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'admin/index'
-#  root to: ''
 
   #get 'sessions/new'
 
@@ -9,6 +8,7 @@ Rails.application.routes.draw do
   #get 'sessions/destroy'
 
   resources :fields
+  match ':controller(/:action(/:id))', :via => [:get, :post]
 
   resources :users
   controller :sessions do
