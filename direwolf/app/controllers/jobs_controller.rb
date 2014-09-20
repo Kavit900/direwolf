@@ -11,9 +11,13 @@ class JobsController < ApplicationController
   end
 
   def create
-    @job = Job.new(:title => params[:title])
-    @job[:deadline] = params[:deadline]
-    redirect_to(:controller => 'sessions', :action => 'employer_first')
+    @job = Job.new(field_params)
+    if @job.save
+      redirect_to(:controller => 'sessions', :action => 'employer_first')
+    else
+      format.html { render :new }
+    end
+
   end
 
   private
