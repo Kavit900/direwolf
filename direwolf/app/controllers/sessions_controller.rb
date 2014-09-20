@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  layout false
   def new
   end
 
@@ -27,6 +28,9 @@ class SessionsController < ApplicationController
     if session[:user_role].eql? User.EMP_ROLE
       puts "show_emp"
       render 'show_emp'
+    end
+    if session[:user_role].eql? User.ADM_ROLE
+      redirect_to(:controller => 'admin',:action => 'admin_first')
     end
   end
 
