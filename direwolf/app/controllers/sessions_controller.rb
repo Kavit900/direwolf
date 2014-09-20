@@ -28,10 +28,14 @@ class SessionsController < ApplicationController
       puts "show_emp"
       render 'show_emp'
     end
+    if session[:user_role].eql? User.ADM_ROLE
+      render 'show_adm'
+    end
   end
 
   def destroy
     session[:user_id] = nil
+    session[:user_role] = nil
     redirect_to login_url, alert: "You have been logged out"
   end
 end

@@ -12,13 +12,15 @@ class UsersController < ApplicationController
     @user = User.new
     role = params[:role]
     puts role
-    if role == "EMP" then
-      @user.role = "EMP"
-    elsif role == "ADM" then
-      @user.role = "ADM"
+    if role == User.EMP_ROLE then
+      @user.role = User.EMP_ROLE
+    elsif role == User.ADM_ROLE then
+      @user.role = User.ADM_ROLE
     else
-      @user.role = "USR"
+      @user.role = User.USR_ROLE
     end
+    puts "User Role:"
+    puts @user.role
   end
 
   # GET /users/1

@@ -1,0 +1,4 @@
+<h1>this is the adm view: Your userId: <%=session[:user_id] %></h1>
+<%= link_to 'Register new Administrator', new_user_path(:ADM) %><br />
+<%= link_to 'Register new Employer', user_path(:new, :ADM) %><br />
+<%= link_to 'Register new Field', new_field_path %><br />
