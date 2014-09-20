@@ -1,12 +1,12 @@
 
 <% if @user.role.eql?("USR") %>
-<h1>New Job Seeker</h1>
+<h1>Edit Job Seeker</h1>
 <% end %>
 <% if @user.role.eql?("EMP") %>
-<h1>New Employer</h1>
+<h1>Edit Employer</h1>
 <% end %>
 <% if @user.role.eql?("ADM") %>
-<h1>New Admin</h1>
+<h1>Edit Admin</h1>
 <% end %>
 <%= render 'form' %>
 

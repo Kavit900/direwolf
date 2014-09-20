@@ -10,12 +10,13 @@ Rails.application.routes.draw do
   #get 'sessions/destroy'
 
   resources :fields
-  
+
   resources :users
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
     delete 'logout' => :destroy
+    get 'logout' => :destroy
   end
   root :to => 'sessions#new'
   match ':controller(/:action(/:id))', :via => [:get, :post]

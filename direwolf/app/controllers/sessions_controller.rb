@@ -23,7 +23,7 @@ class SessionsController < ApplicationController
       render 'show_usr'
     end
     if session[:user_role].eql? User.EMP_ROLE
-      render 'show_emp'
+      redirect_to(:controller => 'users',:action => 'employer_first')
     end
     if session[:user_role].eql? User.ADM_ROLE
       redirect_to(:controller => 'admin',:action => 'admin_first')
