@@ -4,7 +4,7 @@
     <option name="compassSupportEnabled" value="true" />
   </component>
   <component name="ModuleRunConfigurationManager">
-    <configuration default="false" name="All tests in direwolf-proj1: direwolf-proj1" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration default="false" name="All tests in direwolf-proj1: direwolf-proj1" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="direwolf-proj1" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -15,7 +15,7 @@
       <envs>
         <env name="JRUBY_OPTS" value="-X+O" />
       </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
@@ -47,6 +47,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.1.5, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.1.6, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v5.0.1.20140414130214, ruby-1.9.3-p545) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.7, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.2, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.0.1, ruby-1.9.3-p545) [gem]" level="application" />
