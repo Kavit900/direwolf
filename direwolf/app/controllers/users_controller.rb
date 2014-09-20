@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  layout false
   before_action :set_field, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -12,13 +13,15 @@ class UsersController < ApplicationController
     @user = User.new
     role = params[:role]
     puts role
-    if role == "EMP" then
-      @user.role = "EMP"
-    elsif role == "ADM" then
-      @user.role = "ADM"
+    if role == User.EMP_ROLE then
+      @user.role = User.EMP_ROLE
+    elsif role == User.ADM_ROLE then
+      @user.role = User.ADM_ROLE
     else
-      @user.role = "USR"
+      @user.role = User.USR_ROLE
     end
+    puts "User Role:"
+    puts @user.role
   end
 
   # GET /users/1
@@ -44,6 +47,12 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def emp_job_creates
+     @job = Jobs.new(:title => params[:title])
+     @job[:deadline] = params[:deadline]
+     redirect_to(:action => 'admin_first')
+  end
+
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_field
@@ -52,7 +61,7 @@ class UsersController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def field_params
-    params.require(:user).permit(:name, :password, :username, :email, :skills, :resume, :phone)
+    params.require(:user).permit(:name, :password, :password_digest, :username, :email, :skills, :resume, :phone)
   end
 
 end

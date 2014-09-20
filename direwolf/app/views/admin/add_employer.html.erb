@@ -1,0 +1,28 @@
+<h2>ADD Employers</h2>
+
+<div class="addEmployer">
+	 <%= form_tag(:action => 'add_employers') do %>
+   <table>
+   	<tr>
+   		<td><%= label_tag(:name) %></td>
+   		<td><%= text_field_tag(:name) %></td>
+   	</tr>
+      <tr>
+         <td><%= label_tag(:company_name) %></td>
+         <td><%= text_field_tag(:company_name) %></td>
+      </tr>   
+   	 <tr>
+   	 	 <td><%= label_tag(:email) %></td>
+   	 	 <td><%= text_field_tag(:email) %></td>
+   	 </tr>
+   	 <tr>
+   	 	<td><%= label_tag(:password) %></td>
+   	 	<td><%= password_field_tag(:password) %></td>
+   	 </tr>
+   	 <tr>
+   	 	 <td>&nbsp;</td>
+   	 	 <td><%= submit_tag("Add Employer") %></td>
+   	  </tr>
+   	</table>
+    <% end %>
+ </div>

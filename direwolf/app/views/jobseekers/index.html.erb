@@ -1,0 +1,26 @@
+<h1>Job Seeker Page</h1>
+<%= form_tag(users_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Enter Job Title" %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
+<h2>Job Postings</h2>
+<table style="width:100%" border="1">
+  <tr>
+    <td>ID</td>
+    <td> Title</td>
+    <td> Description</td>
+        <td> App. Deadline</td>
+        <td> Action </td>
+  </tr>
+</table>
+
+  <br>
+<h2>Applied Jobs</h2>
+<table style="width:100%" border="1">
+  <tr>
+    <td>ID</td>
+    <td> Title</td>
+    <td> Description</td>
+    <td> Action </td>
+  </tr>
+</table>
