@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140921150646) do
+ActiveRecord::Schema.define(version: 20140921163344) do
 
   create_table "applications", force: true do |t|
     t.string   "coverLetter"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20140921150646) do
     t.boolean  "isDeleted"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
 
   create_table "jobseekers", force: true do |t|

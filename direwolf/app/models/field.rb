@@ -1,3 +1,3 @@
 class Field < ActiveRecord::Base
-  #belongs_to :Job
+  belongs_to :Job
 end
