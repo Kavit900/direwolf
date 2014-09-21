@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140921170738) do
+ActiveRecord::Schema.define(version: 20140921195545) do
 
   create_table "applications", force: true do |t|
     t.string   "coverLetter"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20140921170738) do
     t.datetime "dateOfApp"
     t.integer  "jobId"
     t.integer  "userId"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "applies", force: true do |t|
+    t.text     "cover"
+    t.integer  "job_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -3,4 +3,5 @@ class JobseekersController < ApplicationController
     @jobs = Job.all
     @fields = Field.all
   end
+
 end
