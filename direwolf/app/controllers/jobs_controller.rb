@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  before_action :set_field, only: [:index, :edit, :update, :destroy]
+  before_action :set_field, only: [:edit, :update, :destroy]
 
   def index
     @jobs = Job.all
@@ -22,7 +22,7 @@ class JobsController < ApplicationController
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_field
-    @job = Jobs.find(params[:id])
+    @job = Job.find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
