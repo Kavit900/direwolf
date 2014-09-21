@@ -10,15 +10,6 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.new
-    role = params[:role]
-    puts role
-    if role == User.EMP_ROLE then
-      @user.role = User.EMP_ROLE
-    elsif role == User.ADM_ROLE then
-      @user.role = User.ADM_ROLE
-    else
-      @user.role = User.USR_ROLE
-    end
   end
 
   # GET /users/1
@@ -30,8 +21,12 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(field_params)
-    # TODO: DRY
-    role = field_params[:user_role]
+    puts "Just Role:"
+    puts field_params[:role]
+    puts "UserROLE:"
+    puts field_params[:user_role]
+    # Dont allow the field_param to set the user_role to whatever they would like, only use one of the values we allow.
+    role = field_params[:role]
     if role == User.EMP_ROLE then
       @user.role = User.EMP_ROLE
     elsif role == User.ADM_ROLE then
@@ -41,7 +36,7 @@ class UsersController < ApplicationController
     end
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'Job Seeker was successfully created.' }
+        format.html { redirect_to @user, notice: 'User was successfully created.' }
       else
         format.html { render :new }
       end
@@ -52,12 +47,6 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def emp_job_creates
-     @job = Jobs.new(:title => params[:title])
-     @job[:deadline] = params[:deadline]
-     redirect_to(:action => 'admin_first')
-  end
-
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_field
@@ -66,7 +55,7 @@ class UsersController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def field_params
-    params.require(:user).permit(:name, :password, :password_digest, :username, :email, :skills, :resume, :phone)
+    params.require(:user).permit(:name, :password, :password_digest, :password_confirmation, :username, :email, :skills, :resume, :phone, :role, :contactName)
   end
 
 end
