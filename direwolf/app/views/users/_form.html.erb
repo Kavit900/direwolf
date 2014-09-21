@@ -37,7 +37,7 @@
       <%= u.label :phone %><br>
       <%= u.text_field :phone %>
     </div>
-    <% if @user.role.eql?("USR") %>
+    <% if params[:role].eql?("USR") || params[:role].nil? %>
     <div class="user">
       <%= u.label :skills %><br>
       <%= u.text_area :skills, cols: 80 %>
@@ -47,13 +47,14 @@
       <%= u.text_area :resume, cols: 80 %>
     </div>
     <% end %>
-    <% if @user.role.eql?("EMP") %>
+    <% if params[:role].eql?("EMP") %>
         <div class="user">
           <%= u.label "Contact Name" %><br>
           <%= u.text_field :contactName %>
         </div>
     <% end %>
     <br/>
+    <%= u.hidden_field :role, :value => params[:role] %>
     <div class="actions">
       <%= u.submit %>
     </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140920040942) do
+ActiveRecord::Schema.define(version: 20140921170738) do
 
   create_table "applications", force: true do |t|
     t.string   "coverLetter"
@@ -38,7 +38,15 @@ ActiveRecord::Schema.define(version: 20140920040942) do
     t.boolean  "isDeleted"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
   end
+
+  create_table "jobs_tags", id: false, force: true do |t|
+    t.integer "jobId"
+    t.integer "tagId"
+  end
+
+  add_index "jobs_tags", ["jobId", "tagId"], name: "index_jobs_tags_on_jobId_and_tagId"
 
   create_table "jobseekers", force: true do |t|
     t.string   "search"

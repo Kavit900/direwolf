@@ -1,0 +1,6 @@
+one:
+ role: "ADM"
+ name: "InitialAdmin"
+ password_digest: $2a$10$.vtZ5Zo1S08IqGQQLZe9p.U1NzwrXlkOb/6NA36GCyazLFaVKtVSS
+ username: "admin"
+ email: "rrmercer@ncsu.edu"

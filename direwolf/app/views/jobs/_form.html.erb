@@ -19,6 +19,20 @@
       <%= j.label :deadline %><br>
       <%= j.text_field :deadline %>
     </div>
+
+    <div class="description">
+      <%= j.label :description %><br>
+      <%= j.text_area :description %>
+    </div>
+
+    <div class="tags">
+      <%= link_to 'Manage Tag', tags_path %>
+    </div>
+
+    <div class="field">
+      <%= j.label :field %><br />
+        <%= collection_select(:job, :fieldId, Field.all, :id, :name, {disabled: nil}) %>
+    </div>
   <div class="actions">
     <%= j.submit %>
   </div>
