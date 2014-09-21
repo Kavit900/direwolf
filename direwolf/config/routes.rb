@@ -3,15 +3,10 @@ Rails.application.routes.draw do
 
   get 'admin/index'
 
-  #get 'sessions/new'
-
-  #get 'sessions/create'
-
-  #get 'sessions/destroy'
-
   resources :fields
   resources :jobs
   resources :users
+  resources :tags
   controller :sessions do
     get 'login' => :new
     post 'login' => :create

@@ -25,6 +25,10 @@
       <%= j.text_area :description %>
     </div>
 
+    <div class="tags">
+      <%= link_to 'Manage Tag', tags_path %>
+    </div>
+
     <div class="field">
       <%= j.label :field %><br />
         <%= collection_select(:job, :fieldId, Field.all, :id, :name, {disabled: nil}) %>
