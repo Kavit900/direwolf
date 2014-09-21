@@ -16,8 +16,16 @@
 </table>
 
 <tbody>
-<%= link_to 'Apply', applications_path %>
+<%= link_to 'Apply', new_application_url %>
 
+
+<% @users.each do |job| %>
+    <% #changes users to jobs when job is ready %>
+    <tr>
+      <td><%= job.id%></td>
+
+    </tr>
+<% end %>
 </tbody>
   <br>
 
