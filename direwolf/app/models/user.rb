@@ -9,4 +9,11 @@ class User < ActiveRecord::Base
     "ADM"
   end
   has_secure_password
+
+
+  EMAIL_REGEX = /\A[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}\z/
+  validates_format_of :email, :with => EMAIL_REGEX
+  validates :email, :presence => true
+  validates_uniquesness_of :username
+  validates :username, :length => {:within => 8..25}
 end
