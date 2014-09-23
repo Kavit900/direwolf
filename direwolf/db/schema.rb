@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140923000405) do
+ActiveRecord::Schema.define(version: 20140923024516) do
 
   create_table "applications", force: true do |t|
     t.string   "coverLetter"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 20140923000405) do
     t.integer  "employee_id"
     t.integer  "field_id"
     t.string   "title"
-    t.datetime "deadline"
+    t.date     "deadline"
     t.boolean  "isDeleted"
     t.datetime "created_at"
     t.datetime "updated_at"

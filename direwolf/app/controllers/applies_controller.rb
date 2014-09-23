@@ -4,8 +4,17 @@ class AppliesController < ApplicationController
   # GET /applies
   # GET /applies.json
   def index
-    @applies = Apply.all
-    @jobs = Job.all
+    @jobs = Job.where("employee_id = ?", session[:user_id])
+    if (!@jobs.nil?)
+      puts @jobs
+      @applies = Array.new
+      @jobs.each do |job|
+        @app = Apply.find_by_job_id(job.id)
+        #puts User.find_by_id(@app.user_id).name
+        #@app.name = User.find_by_id(@app.user_id).name
+        @applies << @app
+      end
+    end
   end
 
   # GET /applies/1
