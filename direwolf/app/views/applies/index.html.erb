@@ -4,8 +4,10 @@
   <thead>
     <tr>
       <th>Coverletter</th>
-      <td>Applicant</td>
-      <th colspan="3"></th>
+      <th>Applicant Name</th>
+      <th>Phone Number</th>
+      <th>Email Address</th>
+      <th></th>
     </tr>
   </thead>
 
@@ -16,9 +18,7 @@
         <td><%= apply.user.name %></td>
         <td><%= apply.user.phone %></td>
         <td><%= apply.user.email %></td>
-        <td><%= link_to 'Show', apply %></td>
-        <td><%= link_to 'Edit', edit_apply_path(apply) %></td>
-        <td><%= link_to 'Destroy', apply, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Update', edit_apply_path(apply) %></td>
       </tr>
     <% end %>
   </tbody>

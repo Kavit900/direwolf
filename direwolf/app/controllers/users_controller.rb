@@ -21,10 +21,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(field_params)
-    puts "Just Role:"
-    puts field_params[:role]
-    puts "UserROLE:"
-    puts field_params[:user_role]
     # Dont allow the field_param to set the user_role to whatever they would like, only use one of the values we allow.
     role = field_params[:role]
     if role == User.EMP_ROLE then
@@ -39,6 +35,20 @@ class UsersController < ApplicationController
         format.html { redirect_to @user, notice: 'User was successfully created.' }
       else
         format.html { render :new }
+      end
+    end
+  end
+
+  # PATCH/PUT /users/1
+  # PATCH/PUT /users/1.json
+  def update
+    respond_to do |format|
+      if @user.update(field_params)
+        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :ok, location: @user }
+      else
+        format.html { render :edit }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end

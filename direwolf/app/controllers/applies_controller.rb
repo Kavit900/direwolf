@@ -6,13 +6,9 @@ class AppliesController < ApplicationController
   def index
     @jobs = Job.where("employee_id = ?", session[:user_id])
     if (!@jobs.nil?)
-      puts @jobs
       @applies = Array.new
       @jobs.each do |job|
-        @app = Apply.find_by_job_id(job.id)
-        #puts User.find_by_id(@app.user_id).name
-        #@app.name = User.find_by_id(@app.user_id).name
-        @applies << @app
+        @applies << Apply.find_by_job_id(job.id)
       end
     end
   end
@@ -82,6 +78,6 @@ class AppliesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def apply_params
-      params.require(:apply).permit(:cover, :job_id)
+      params.require(:apply).permit(:cover, :job_id, :status)
     end
 end

@@ -21,7 +21,7 @@ class JobsController < ApplicationController
   def create
     @job = Job.new(field_params)
     # associate this job posting with the currently logged in user
-    @job.employeeId = session[:user_id]
+    @job.employee_id = session[:user_id]
     @job.isDeleted = false
     if @job.save
       redirect_to(:controller => 'sessions', :action => 'employer_first')
@@ -38,6 +38,17 @@ class JobsController < ApplicationController
       else
         format.html { render :edit }
         format.json { render json: @job.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def destroy
+    puts "DESTROY CALLED"
+    @job.isDeleted = true
+    if @job.save then
+      respond_to do |format|
+        format.html { redirect_to jobs_url, notice: 'Job was successfully destroyed.' }
+        format.json { head :no_content }
       end
     end
   end
