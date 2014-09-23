@@ -26,12 +26,13 @@
     </div>
 
     <div class="tags">
-      <%= link_to 'Manage Tag', tags_path %>
+      <%= link_to 'Manage Tag', tags_path %><br/>
+
     </div>
 
     <div class="field">
       <%= j.label :field %><br />
-        <%= collection_select(:job, :fieldId, Field.all, :id, :name, {disabled: nil}) %>
+        <%= collection_select(:job, :field_id, Field.all, :id, :name, {disabled: nil}) %>
     </div>
   <div class="actions">
     <%= j.submit %>

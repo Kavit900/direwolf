@@ -14,6 +14,8 @@ class JobsController < ApplicationController
   end
 
   def edit
+    #puts "Editing ID : "
+    #puts @job.field.name
   end
 
   def create
@@ -48,6 +50,6 @@ class JobsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def field_params
-    params.require(:job).permit(:title, :deadline, :fieldId, :description)
+    params.require(:job).permit(:title, :deadline, :field_id, :description)
   end
 end

@@ -20,7 +20,7 @@
         <td><%= job.title %></td>
         <td><%= job.description %></td>
         <td><%= job.deadline %></td>
-        <td><%= link_to 'Apply', new_apply_url(job.id) %> </td>
+        <td><%= link_to 'Apply', new_apply_path(:job_id => job.id) %> </td>
         <td> applied </td>
         </td>
 

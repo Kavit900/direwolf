@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140921195545) do
+ActiveRecord::Schema.define(version: 20140923000405) do
 
   create_table "applications", force: true do |t|
     t.string   "coverLetter"
@@ -28,18 +28,20 @@ ActiveRecord::Schema.define(version: 20140921195545) do
     t.integer  "job_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "status"
+    t.datetime "dateOfApp"
   end
 
   create_table "fields", force: true do |t|
-    t.integer  "fieldId"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "jobs", force: true do |t|
-    t.integer  "employeeId"
-    t.integer  "fieldId"
+    t.integer  "employee_id"
+    t.integer  "field_id"
     t.string   "title"
     t.datetime "deadline"
     t.boolean  "isDeleted"
@@ -49,11 +51,11 @@ ActiveRecord::Schema.define(version: 20140921195545) do
   end
 
   create_table "jobs_tags", id: false, force: true do |t|
-    t.integer "jobId"
-    t.integer "tagId"
+    t.integer "job_id"
+    t.integer "tag_id"
   end
 
-  add_index "jobs_tags", ["jobId", "tagId"], name: "index_jobs_tags_on_jobId_and_tagId"
+  add_index "jobs_tags", ["job_id", "tag_id"], name: "index_jobs_tags_on_job_id_and_tag_id"
 
   create_table "jobseekers", force: true do |t|
     t.string   "search"

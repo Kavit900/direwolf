@@ -25,19 +25,14 @@ class AppliesController < ApplicationController
   # POST /applies
   # POST /applies.json
   def create
-
     @apply = Apply.new(apply_params)
-    @apply[:job_id] == 24
-    @apply.job_id == 24
-
+    @apply.job_id = apply_params[:job_id]
+    puts "JobId: "
+    puts @apply.job_id
     respond_to do |format|
       if @apply.save
-
         format.html { redirect_to @apply, notice: 'Apply was successfully created.' }
-
-
         format.json { render :show, status: :created, location: @apply }
-
       else
         format.html { render :new }
         format.json { render json: @apply.errors, status: :unprocessable_entity }

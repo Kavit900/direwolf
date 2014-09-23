@@ -15,7 +15,7 @@
     <%= f.label :cover %><br>
     <%= f.text_area :cover %>
   </div>
-
+    <%= f.hidden_field :job_id, :value => params[:job_id] %>
 
   <div class="actions">
     <%= f.submit %>

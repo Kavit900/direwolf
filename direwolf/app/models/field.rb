@@ -1,3 +1,3 @@
 class Field < ActiveRecord::Base
-  belongs_to :Job
+  has_one :job
 end
