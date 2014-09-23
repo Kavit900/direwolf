@@ -2,7 +2,7 @@ class JobsController < ApplicationController
   before_action :set_field, only: [:show, :edit, :update, :destroy]
 
   def index
-    @jobs = Job.all
+    @jobs = Job.where("employee_id = ? and isDeleted = 'f'", session[:user_id])
     @fields = Field.all
   end
 
