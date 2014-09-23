@@ -5,10 +5,14 @@ class AppliesController < ApplicationController
   # GET /applies.json
   def index
     @jobs = Job.where("employee_id = ?", session[:user_id])
+    @applies = Array.new
     if (!@jobs.nil?)
-      @applies = Array.new
       @jobs.each do |job|
-        @applies << Apply.find_by_job_id(job.id)
+        @j = Apply.find_by_job_id(job.id)
+        if (!@j.nil?) then
+          puts @j
+          @applies << @j
+        end
       end
     end
   end
