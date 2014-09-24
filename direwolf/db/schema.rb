@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140923024516) do
   end
 
   create_table "fields", force: true do |t|
+    t.integer  "fieldId"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

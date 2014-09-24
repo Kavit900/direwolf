@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  layout false
   before_action :set_field, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -32,6 +33,7 @@ class UsersController < ApplicationController
     end
     respond_to do |format|
       if @user.save
+        UserMailer.welcome_email(@user).deliver
         format.html { redirect_to @user, notice: 'User was successfully created.' }
       else
         format.html { render :new }

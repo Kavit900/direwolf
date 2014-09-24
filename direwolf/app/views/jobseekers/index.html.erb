@@ -1,7 +1,7 @@
 <h1>Job Seeker Page</h1>
 <%= form_tag(jobs_path, :method => "search", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], placeholder: "Search for a job" %>
-        <%= submit_tag "Search", :name => nil %>
+        <%= submit_tag "Search", :action => 'search', :name => nil %>
 <% end %>
 <h2>Job Postings</h2>
 <tbody>
