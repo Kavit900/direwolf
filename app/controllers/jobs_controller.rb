@@ -5,6 +5,16 @@ class JobsController < ApplicationController
   def index
     @jobs = Job.where("employee_id = ? and isDeleted = 'f'", session[:user_id])
     @fields = Field.all
+
+    if params[:search]
+      puts " I am searching"
+    if @jobs = Job.find(:all, :conditions => ["%#{params[:search]}%"]) then
+      format.html { redirect_to jobs_url, notice: 'Job was successfully destroyed.' }
+    end
+  else
+    @jobs = Job.find(:all)
+  end
+
   end
 
   def show
