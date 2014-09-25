@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  layout false
+
   def new
   end
 
@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       if (!user.nil? and user.authenticate(params[:password]))
         session[:user_id] = user.id
         session[:user_role] = user.role
-        redirect_to "/sessions", alert: "SUCCESS!!!!" # TODO: convert to a path variable
+        redirect_to "/sessions"
       else
         redirect_to login_url, alert: "Invalid username/password combination"
       end

@@ -37,7 +37,7 @@
       <%= u.label :phone %><br>
       <%= u.text_field :phone %>
     </div>
-    <% if params[:role].eql?("USR") || params[:role].nil? %>
+    <% if (params[:role].eql?("USR") || (params[:role].nil? && @user.nil?)) %>
     <div class="user">
       <%= u.label :skills %><br>
       <%= u.text_area :skills, cols: 80 %>
@@ -54,7 +54,11 @@
         </div>
     <% end %>
     <br/>
-    <%= u.hidden_field :role, :value => params[:role] %>
+    <% if (params[:role].nil? ) then
+            %><%= u.hidden_field :role, :value => @user.role %><%
+        else
+            %><%= u.hidden_field :role, :value => params[:role] %><%
+        end %>
     <div class="actions">
       <%= u.submit %>
     </div>

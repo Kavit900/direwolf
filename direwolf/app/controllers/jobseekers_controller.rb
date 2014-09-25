@@ -1,5 +1,5 @@
 class JobseekersController < ApplicationController
-  layout false
+
   def index
     @jobs = Job.all
     @fields = Field.all
