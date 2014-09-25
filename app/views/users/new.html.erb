@@ -1,0 +1,12 @@
+
+<% if params[:role].eql?("USR") || params[:role].nil? %>
+<h1>New Job Seeker</h1>
+<% end %>
+<% if params[:role].eql?("EMP") %>
+<h1>New Employer</h1>
+<% end %>
+<% if params[:role].eql?("ADM") %>
+<h1>New Admin</h1>
+<% end %>
+<%= render 'form' %>
+

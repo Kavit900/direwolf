@@ -1,0 +1,17 @@
+
+
+1.) Install Mysql2
+Instructions:   https://github.com/brianmario/mysql2
+
+c:\csc517\workspace\direwolf-proj1\direwolf>gem install mysql2 -- --with-mysql-dir="C:\ruby\mysql-connector-c-6.1.5-winx64\mysql-connector-c-6.1.5-winx64"
+Temporarily enhancing PATH to include DevKit...
+Building native extensions with: '--with-mysql-dir=C:\ruby\mysql-connector-c-6.1.5-winx64\mysql-connector-c-6.1.5-winx64'
+This could take a while...
+Successfully installed mysql2-0.3.16
+Parsing documentation for mysql2-0.3.16
+Installing ri documentation for mysql2-0.3.16
+Done installing documentation for mysql2 after 0 seconds
+1 gem installed
+
+
+2.) https://github.com/tzinfo/tzinfo/wiki/Resolving-TZInfo::DataSourceNotFound-Errors

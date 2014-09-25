@@ -1,0 +1,40 @@
+<%= form_for(@job) do |j| %>
+  <% if @job.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@job.errors.count, "error") %> prohibited this field from being saved:</h2>
+
+      <ul>
+      <% @job.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="title">
+    <%= j.label :title %><br>
+    <%= j.text_field :title %>
+  </div>
+
+    <div class="deadline">
+      <%= j.label :deadline %><br>
+      <%= j.text_field :deadline %>
+    </div>
+
+    <div class="description">
+      <%= j.label :description %><br>
+      <%= j.text_area :description %>
+    </div>
+
+    <div class="tags">
+      <%= link_to 'Manage Tag', tags_path %><br/>
+
+    </div>
+
+    <div class="field">
+      <%= j.label :field %><br />
+        <%= collection_select(:job, :field_id, Field.all, :id, :name, {disabled: nil}) %>
+    </div>
+  <div class="actions">
+    <%= j.submit %>
+  </div>
+<% end %>
