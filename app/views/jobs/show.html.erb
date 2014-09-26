@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @job.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @job.title %><br>
+  <strong>Deadline: </strong>
+  <%= @job.deadline %><br>
+  <strong>Details: </strong>
+  <%= @job.description %><br>
+</p>
+
+<%= link_to 'Back', searches_path %><br>
+<% if !(session[:user_id].nil?) %>
+    <a href="../jobseekers/">Back to Job Seeker Page</a>
+<% end %>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Direwolf</title>
+  <%= stylesheet_link_tag "default" %>
+  <%= javascript_include_tag "default"  %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if !(session[:user_id].nil?) %>
+  <%= link_to 'Profile', edit_user_path(session[:user_id]) %> | <%= link_to 'Logout', logout_path, :method => :delete %>
+<% end %>
+<h3> <%= link_to 'Search for Jobs Here', searches_path %></h3>
+<%= yield %>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<h1>Job Seeker Page</h1>
+<h2>Job Postings</h2>
+<tbody>
+<table style="width:100%" border="1">
+  <tr>
+    <td>ID</td>
+    <td> Title</td>
+    <td> Description</td>
+    <td> App. Deadline</td>
+    <td>Applied or NOT</td>
+  </tr>
+  <% @jobs.each do |job| %>
+      <tr>
+        <td><%= job.id %></td>
+        <td><%= job.title %></td>
+        <td><%= job.description %></td>
+        <td><%= job.deadline %></td>
+        <td> <% job.applies.each do |a|
+          if (a.job_id.eql? job.id ) then
+        %>Already Applied<%
+           else
+             if (a.status.nil? ) then
+               if (job.deadline > Date.today) then
+        %><%= link_to 'Apply', new_apply_path(:job_id => job.id)  %><%
+           else
+        %>Application Deadline passed<%
+           puts "interview"
+           end
+           end
+           if (a.status == 1) then
+        %>Interview Granted<%
+           end
+           if (a.status == 2) then
+        %>Not a fit<%
+           end
+        %>
+              <% end %>
+          <% end %>
+          <% if job.applies.length < 1
+          %><%= link_to 'Apply', new_apply_path(:job_id => job.id)  %>
+
+          <% end %></td>
+      </tr>
+  <% end %>
+</table>
+
+</tbody>
+
+
+
+<br>
+

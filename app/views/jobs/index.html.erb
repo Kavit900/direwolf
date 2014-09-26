@@ -1,0 +1,31 @@
+<h1>Listing Jobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Description</td>
+      <td>App. Deadline</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jobs.each do |job| %>
+      <tr>
+        <td><%= job.id %></td>
+        <td><%= job.title %></td>
+        <td><%= job.description %></td>
+        <td><%= job.deadline %></td>
+        <td><%= link_to 'Edit', edit_job_path(job) %></td>
+        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% if !(session[:user_id].nil?) %>
+    <a href="../jobseekers/">Back to Job Seeker Page</a>
+<% end %>
+<br>
+
