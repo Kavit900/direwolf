@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140923024516) do
+ActiveRecord::Schema.define(version: 20140925223908) do
 
   create_table "applications", force: true do |t|
     t.string   "coverLetter"
@@ -60,6 +60,13 @@ ActiveRecord::Schema.define(version: 20140923024516) do
 
   create_table "jobseekers", force: true do |t|
     t.string   "search"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "searches", force: true do |t|
+    t.string   "search"
+    t.string   "text_field_tag"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

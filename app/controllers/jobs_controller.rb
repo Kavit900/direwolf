@@ -5,6 +5,7 @@ class JobsController < ApplicationController
     @jobs = Job.where("employee_id = ? and isDeleted = 'f'", session[:user_id])
     @fields = Field.all
 
+=begin
     if params[:search]
       puts " I am searching"
     if @jobs = Job.find(:all, :conditions => ["%#{params[:search]}%"]) then
@@ -13,6 +14,7 @@ class JobsController < ApplicationController
   else
     @jobs = Job.find(:all)
   end
+=end
 
   end
 

@@ -1,8 +1,4 @@
 <h1>Job Seeker Page</h1>
-<%= form_tag jobs_path, :method => 'get' do %>
-    <%= text_field_tag :search, params[:search], placeholder: "Search for a job" %>
-        <%= submit_tag "Search", :action => 'search' %>
-<% end %>
 <h2>Job Postings</h2>
 <tbody>
 <table style="width:100%" border="1">

@@ -7,7 +7,14 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @job.title %>
+  <%= @job.title %><br>
+  <strong>Deadline: </strong>
+  <%= @job.deadline %><br>
+  <strong>Details: </strong>
+  <%= @job.description %><br>
 </p>
 
-<%= link_to 'Back', jobs_path %>
+<%= link_to 'Back', searches_path %><br>
+<% if !(session[:user_id].nil?) %>
+    <a href="../jobseekers/">Back to Job Seeker Page</a>
+<% end %>
