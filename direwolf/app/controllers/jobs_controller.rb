@@ -14,8 +14,6 @@ class JobsController < ApplicationController
   end
 
   def edit
-    #puts "Editing ID : "
-    #puts @job.field.name
   end
 
   def create
@@ -24,6 +22,14 @@ class JobsController < ApplicationController
     @job.employee_id = session[:user_id]
     @job.isDeleted = false
     if @job.save
+      # TODO: find a way to have rails do this
+      # then add all the tags back
+      params[:job][:tags].each do |x|
+        @tag = Tag.find_by_id(x)
+        if (!@tag.nil?) then
+          @job.tags << @tag
+        end
+      end
       redirect_to(:controller => 'sessions', :action => 'employer_first')
     else
       format.html { render :new }
@@ -33,6 +39,16 @@ class JobsController < ApplicationController
   def update
     respond_to do |format|
       if @job.update(field_params)
+        # for now do it manually, destroy all tags associated with the job
+        # then add them back, ugly but it works
+        #@job.tags.clear
+        # then add all the tags back
+        params[:job][:tags].each do |x|
+          @tag = Tag.find_by_id(x)
+          if (!@tag.nil?) then
+            @job.tags << @tag
+          end
+        end
         format.html { redirect_to @job, notice: 'Job was successfully updated.' }
         format.json { render :show, status: :ok, location: @job }
       else
@@ -43,7 +59,6 @@ class JobsController < ApplicationController
   end
 
   def destroy
-    puts "DESTROY CALLED"
     @job.isDeleted = true
     if @job.save then
       respond_to do |format|
@@ -61,6 +76,6 @@ class JobsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def field_params
-    params.require(:job).permit(:title, :deadline, :field_id, :description)
+    params.require(:job).permit(:title, :deadline, :field_id, :description, :tags => [:id])
   end
 end

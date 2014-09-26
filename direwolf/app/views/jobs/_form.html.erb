@@ -26,8 +26,8 @@
     </div>
 
     <div class="tags">
-      <%= link_to 'Manage Tag', tags_path %><br/>
-
+      <%= link_to 'Manage Tags (Add or Delete a tag)', tags_path %><br/>
+      <%= j.select :tags, Tag.all.collect {|x| [x.tag, x.id]}, {selected: @job.tags.all.collect{ |x| x.id} }, :multiple => true %>
     </div>
 
     <div class="field">
