@@ -145,12 +145,9 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD:direwolf/Gemfile.lock
-=======
   nokogiri
   pg
   rack (~> 1.1)
->>>>>>> ef2818521f744a28292a3860d3cf93a890ba8d53:Gemfile.lock
   rails (= 4.1.5)
   rspec-rails
   sass-rails (~> 4.0.3)
