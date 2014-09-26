@@ -6,12 +6,9 @@ gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
 
 
-group :development, :test do
+#group :development, :test do
   gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+#end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -22,11 +19,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-source 'https://rubygems.org'
-gem 'nokogiri'
-gem 'rack', '~>1.1'
-
- #trying heroku
 group :development, :test do 
 	gem 'rspec-rails'
 end
