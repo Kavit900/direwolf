@@ -36,8 +36,7 @@ class AppliesController < ApplicationController
   def create
     @apply = Apply.new(apply_params)
     @apply.job_id = apply_params[:job_id]
-    puts "JobId: "
-    puts @apply.job_id
+    @apply.user_id = session[:user_id]
     respond_to do |format|
       if @apply.save
         format.html { redirect_to @apply, notice: 'Apply was successfully created.' }
