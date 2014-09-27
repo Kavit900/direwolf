@@ -12,10 +12,10 @@
 
   </table>
 <%= form_tag search_results_path do %>
-    <%= text_field_tag :keywords, placeholder="Enter title or tag..." %>
+    <%= text_field_tag :keywords, placeholder = "Title" %>
     <%= submit_tag 'Search' %>
 
-   <h7> <%= render @jobs %> </h7>
+    <%= render @jobs %>
 
 
     <a href="../">Back to Homepage</a>
