@@ -1,6 +1,7 @@
 
 <div>
-    <h1>Direwolf Login</h1>
+
+    <h1> <font color = "green"> Direwolf Login </font></h1>
   <% if flash[:alert] %>
       <p id="notice"><%= flash[:alert] %></p>
   <% end %>
@@ -17,11 +18,11 @@
           <%= password_field_tag :password, params[:password] %>
         </div>
         <div>
-          <%= submit_tag "Login" %>
+          <%= submit_tag "Login", class: "btn btn-success"%>
         </div>
       </fieldset>
       <%= link_to 'Register new Job Seeker', new_user_path %> | <%= link_to 'Search for Jobs Here', searches_path %>
 
 <% end %>
+  <img SRC="http://harrisongreetingcards.net/images/1505_thank_you_for_visiting_with_us_card.png" style="width:304px;height:228px">
 </div>
-<IMG SRC="http://harrisongreetingcards.net/images/1505_thank_you_for_visiting_with_us_card.png">

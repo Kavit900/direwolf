@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Job Seeker Page</h1>
 <%= link_to 'Search for Jobs Here', searches_path %>
 <h2>Job Postings</h2>
@@ -22,7 +23,7 @@
            else
              if (a.status.nil? ) then
                if (job.deadline > Date.today) then
-        %><%= link_to 'Apply', new_apply_path(:job_id => job.id)  %><%
+        %><%= link_to 'Apply', new_apply_path(:job_id => job.id), class: "btn btn-success"  %><%
            else
         %>Application Deadline passed<%
            puts "interview"
@@ -38,7 +39,7 @@
               <% end %>
           <% end %>
           <% if job.applies.length < 1
-          %><%= link_to 'Apply', new_apply_path(:job_id => job.id)  %>
+          %><%= link_to 'Apply', new_apply_path(:job_id => job.id), class: "btn btn-success"  %>
 
           <% end %></td>
       </tr>
@@ -51,3 +52,4 @@
 
 <br>
 
+</div>
