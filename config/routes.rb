@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
     get 'logout' => :destroy
+    get 'loginagain' => :destroy2
   end
   root :to => 'sessions#new'
   match ':controller(/:action(/:id))', :via => [:get, :post]

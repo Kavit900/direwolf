@@ -30,7 +30,11 @@ class SessionsController < ApplicationController
       redirect_to(:action => 'admin_first')
     end
   end
-
+  def destroy2
+    session[:user_id] = nil
+    session[:user_role] = nil
+    redirect_to login_url, alert: "Log in again!"
+  end
   def destroy
     session[:user_id] = nil
     session[:user_role] = nil
