@@ -11,6 +11,12 @@
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', searches_path %>
+<% if @user.role == "USR"  %>
+    <%= link_to 'Back', controller: 'jobseekers'  %>
+<% elsif @user.role == "EMP"  %>
+    <%=  link_to 'Back', "/sessions/employer_first/" %>
+<% else %>
+    <%= link_to 'Back', loginagin_url, :method => :delete  %>
+<% end %>
 
 
