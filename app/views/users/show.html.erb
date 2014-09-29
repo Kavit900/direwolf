@@ -16,7 +16,7 @@
 <% elsif @user.role == "EMP"  %>
     <%=  link_to 'Back', "/sessions/employer_first/" %>
 <% else %>
-    <%= link_to 'Back', loginagain_url, :method => :delete  %>
+    <%= link_to 'Back', "/sessions/new.html.erb/"  %>
 <% end %>
 
 
