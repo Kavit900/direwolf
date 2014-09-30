@@ -59,7 +59,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @job.isDeleted = true
+    @user.isDeleted = true
     respond_to users_path
   end
 
