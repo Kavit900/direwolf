@@ -39,7 +39,8 @@ class AppliesController < ApplicationController
     @apply.user_id = session[:user_id]
     respond_to do |format|
       if @apply.save
-        format.html { redirect_to @apply, notice: 'Apply was successfully created.' }
+        ApplyMailer.new_app_email(@apply).deliver
+        format.html { redirect_to :root, alert: 'You have successfully applied for ${@apply.job.title}' }
         format.json { render :show, status: :created, location: @apply }
       else
         format.html { render :new }
@@ -51,8 +52,16 @@ class AppliesController < ApplicationController
   # PATCH/PUT /applies/1
   # PATCH/PUT /applies/1.json
   def update
+    @temp = Apply.find_by_id @apply.id
+    updated = false
+    if (@temp.status != @apply.status) then
+      updated = true
+    end
     respond_to do |format|
       if @apply.update(apply_params)
+        if updated then
+          ApplyMailer.app_updated_email(@apply).deliver
+        end
         format.html { redirect_to @apply, notice: 'Apply was successfully updated.' }
         format.json { render :show, status: :ok, location: @apply }
       else

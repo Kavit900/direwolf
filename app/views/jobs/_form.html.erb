@@ -11,27 +11,27 @@
     </div>
   <% end %>
   <div class="title">
-    <%= j.label :title %><br>
+    <%= j.label :title %>
     <%= j.text_field :title %>
   </div>
 
     <div class="deadline">
-      <%= j.label :deadline %><br>
+      <%= j.label :deadline %>
       <%= j.text_field :deadline, :placeholder => "DD/MM/YY" %>
     </div>
 
     <div class="description">
-      <%= j.label :description %><br>
+      <%= j.label :description %>
       <%= j.text_area :description %>
     </div>
 
     <div class="tags">
-      <%= link_to 'Manage Tags (Add or Delete a tag)', tags_path %><br/>
+      <%= link_to 'Manage Tags (Add or Delete a tag)', tags_path %> <br />
       <%= j.select :tags, Tag.all.collect {|x| [x.tag, x.id]}, {selected: @job.tags.all.collect{ |x| x.id} }, :multiple => true %>
     </div>
 
     <div class="field">
-      <%= j.label :field %><br />
+      <%= j.label :field %>
         <%= collection_select(:job, :field_id, Field.all, :id, :name, {disabled: nil}) %>
     </div>
   <div class="actions">
