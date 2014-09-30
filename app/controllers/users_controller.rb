@@ -59,14 +59,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @article = Article.find(params[:id])
-    @article.destroy
-
-    redirect_to articles_path
-  end
-  def destroy
-    @user = User.find(params[:id])
-    @user.destroy
+    @job.isDeleted = true
     respond_to users_path
   end
 
