@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
   resources :sessions
+  resources :jobseekers
 
   match 'searches' => "searches#index", :via => :get
   match 'jobs/:id' => 'searches#show', :as => 'job1', :via => :get

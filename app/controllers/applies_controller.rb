@@ -40,6 +40,7 @@ class AppliesController < ApplicationController
     respond_to do |format|
       if @apply.save
         ApplyMailer.new_app_email(@apply).deliver
+
         format.html { redirect_to :root, alert: 'You have successfully applied for ${@apply.job.title}' }
         format.json { render :show, status: :created, location: @apply }
       else

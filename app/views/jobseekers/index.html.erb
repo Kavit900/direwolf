@@ -1,33 +1,41 @@
 <div class="container">
-<h1>Job Seeker Page</h1>
-<%= link_to 'Search for Jobs Here', searches_path %>
+  <h1>Job Seeker Page</h1>
+  <%= link_to 'Search for Jobs Here', searches_path %>
 
-<br>
-
-<%= link_to 'Job Postings Here', new_jobseekers_path %>
   <br>
-  
-  <tbody>
-  <table style="width:100%" border="1">
-   <tr><h2> Applied Jobs</h2></tr>
 
-      <% @jobs.each do |job| %>
-      <% job.applies.each do |a| %>
-       <% if session[:user_role] == "USR" && session[:user_id] == a.user_id %>
+  <%= link_to 'Job Postings Here', new_jobseeker_path %>
+  <br>
+  <table style="width:100%" border="1">
+    <tr><h2> Applied Jobs</h2></tr>
+    <tr>
+      <td>ID</td>
+      <td> Title</td>
+      <td> Description</td>
+      <td> Job was Created </td>
+      <td> Status </td>
+    </tr>
+    <% @jobs.each do |job| %>
+        <% job.applies.each do |z| %>
+            <% if session[:user_role] == "USR" && session[:user_id] == z.user_id %>
+
                 <tr>
-                  <td>ID</td>
-                  <td> Title</td>
-                  <td> Description</td>
-                  <td> Applied On </td>
-                </tr>
-        <tr>
-          <td><%= job.id %></td>
-          <td><%= job.title %></td>
-          <td><%= job.description %></td>
-          <td><%= job.updated_at.strftime("%m/%d/%Y") %></td>
-<% end %>
+                  <td><%= job.id %></td>
+                  <td><%= job.title %></td>
+                  <td><%= job.description %></td>
+                  <td><%= job.updated_at.strftime("%m/%d/%Y") %></td>
+                  <td><% if z.status == 1 %>
+                        <%= "Future Interview" %>
+                    <% elsif z.status == 2 %>
+                        <%= "Not Hired" %>
+                    <% else %>
+                        <%= "Undecided" %></td>
+                    <% end %>
+                    <% @key1 = job.title %>
+                <% @key2 = job.field_id %>
+            <% end %>
         <% end %>
-      <% end %>
+    <% end %>
     </tr>
 
   </table>
@@ -35,8 +43,24 @@
 
   </tbody>
 
-
-
-<br>
-
+  <table style="width:100%" border="1">
+    <tr><h2> Recommended Jobs </h2></tr>
+    <tr>
+      <td>ID</td>
+      <td> Title</td>
+      <td> Description</td>
+      <td> Apply </td>
+    </tr>
+    <tr>
+  <% @jobs.each do |rec| %>
+      <% if rec.title.include?(@key1.to_s) || if rec.field_id == @key2 %>
+         <td> <%= rec.title %> </td>
+         <td> <%= rec.description %></td>
+         <td> <%=  link_to 'Apply', new_apply_path(:job_id => rec.id), class: "btn btn-success"  %></td>
+          <%end%>
+<% end %>
+  <% end %>
+      </tr>
+      </table>
+  </tbody>
 </div>
