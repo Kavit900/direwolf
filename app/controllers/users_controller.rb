@@ -59,11 +59,15 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    redirect_to articles_path
+  end
+  def destroy
+    @user = User.find(params[:id])
     @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: 'Employer was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    respond_to users_path
   end
 
   private
