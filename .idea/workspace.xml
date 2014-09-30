@@ -26,15 +26,15 @@
     <SUITE FILE_PATH="coverage/direwolf@tmp_clear__direwolf.coverage" NAME="tmp:clear: direwolf Coverage Results" MODIFIED="1411526194116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__applies_helper_test___direwolf.coverage" NAME="Run test 'applies_helper_test': direwolf Coverage Results" MODIFIED="1411533391778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__applies_controller_test___direwolf.coverage" NAME="Run test 'applies_controller_test': direwolf Coverage Results" MODIFIED="1411533032959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
-    <SUITE FILE_PATH="coverage/direwolf@searchkick_reindex__direwolf.coverage" NAME="searchkick:reindex: direwolf Coverage Results" MODIFIED="1411608908094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__fields_helper_test___direwolf.coverage" NAME="Run test 'fields_helper_test': direwolf Coverage Results" MODIFIED="1411533381890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
-    <SUITE FILE_PATH="coverage/direwolf@db_schema_cache_clear__direwolf.coverage" NAME="db:schema:cache:clear: direwolf Coverage Results" MODIFIED="1411526209752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
+    <SUITE FILE_PATH="coverage/direwolf@searchkick_reindex__direwolf.coverage" NAME="searchkick:reindex: direwolf Coverage Results" MODIFIED="1411608908094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__jobseekers_controller_test___direwolf.coverage" NAME="Run test 'jobseekers_controller_test': direwolf Coverage Results" MODIFIED="1411532565700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
+    <SUITE FILE_PATH="coverage/direwolf@db_schema_cache_clear__direwolf.coverage" NAME="db:schema:cache:clear: direwolf Coverage Results" MODIFIED="1411526209752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@sunspot_solr_start__direwolf.coverage" NAME="sunspot:solr:start: direwolf Coverage Results" MODIFIED="1411608230168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__jobs_test___direwolf.coverage" NAME="Run test 'jobs_test': direwolf Coverage Results" MODIFIED="1411533902880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Production__direwolf.coverage" NAME="Production: direwolf Coverage Results" MODIFIED="1412053498283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
-    <SUITE FILE_PATH="coverage/direwolf@Run_test__sessions_controller_test___direwolf.coverage" NAME="Run test 'sessions_controller_test': direwolf Coverage Results" MODIFIED="1411533039454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Rails_console__direwolf.coverage" NAME="Rails console: direwolf Coverage Results" MODIFIED="1411705623311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
+    <SUITE FILE_PATH="coverage/direwolf@Run_test__sessions_controller_test___direwolf.coverage" NAME="Run test 'sessions_controller_test': direwolf Coverage Results" MODIFIED="1411533039454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@db_migrate__direwolf.coverage" NAME="db:migrate: direwolf Coverage Results" MODIFIED="1412053484832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Development__direwolf.coverage" NAME="Development: direwolf Coverage Results" MODIFIED="1412056444230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
   </component>
@@ -53,7 +53,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9615386" vertical-offset="8" max-vertical-offset="510">
+            <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="510">
               <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
               <folding />
             </state>
@@ -113,8 +113,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45019922" vertical-offset="46" max-vertical-offset="578">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.8386454" vertical-offset="21" max-vertical-offset="544">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/fields/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="561">
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="561">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="62" />
               <folding />
             </state>
@@ -239,7 +239,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -387,6 +386,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -726,7 +726,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1020,7 +1020,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9615386" vertical-offset="8" max-vertical-offset="510">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="510">
           <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
           <folding />
         </state>
@@ -1030,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.63432837" vertical-offset="0" max-vertical-offset="536">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,7 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="541">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="562">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1140,7 +1135,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/fields/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="561">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="561">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="62" />
           <folding />
         </state>
@@ -1148,8 +1143,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45019922" vertical-offset="46" max-vertical-offset="578">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.8386454" vertical-offset="21" max-vertical-offset="544">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
