@@ -54,9 +54,11 @@
     <tr>
   <% @jobs.each do |rec| %>
       <% if rec.title.include?(@key1.to_s) || if rec.field_id == @key2 %>
+              <tr>
          <td> <%= rec.title %> </td>
          <td> <%= rec.description %></td>
          <td> <%=  link_to 'Apply', new_apply_path(:job_id => rec.id), class: "btn btn-success"  %></td>
+            </tr>
           <%end%>
 <% end %>
   <% end %>
