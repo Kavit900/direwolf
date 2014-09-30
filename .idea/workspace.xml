@@ -26,15 +26,15 @@
     <SUITE FILE_PATH="coverage/direwolf@tmp_clear__direwolf.coverage" NAME="tmp:clear: direwolf Coverage Results" MODIFIED="1411526194116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__applies_helper_test___direwolf.coverage" NAME="Run test 'applies_helper_test': direwolf Coverage Results" MODIFIED="1411533391778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__applies_controller_test___direwolf.coverage" NAME="Run test 'applies_controller_test': direwolf Coverage Results" MODIFIED="1411533032959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
-    <SUITE FILE_PATH="coverage/direwolf@searchkick_reindex__direwolf.coverage" NAME="searchkick:reindex: direwolf Coverage Results" MODIFIED="1411608908094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__fields_helper_test___direwolf.coverage" NAME="Run test 'fields_helper_test': direwolf Coverage Results" MODIFIED="1411533381890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
-    <SUITE FILE_PATH="coverage/direwolf@db_schema_cache_clear__direwolf.coverage" NAME="db:schema:cache:clear: direwolf Coverage Results" MODIFIED="1411526209752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
+    <SUITE FILE_PATH="coverage/direwolf@searchkick_reindex__direwolf.coverage" NAME="searchkick:reindex: direwolf Coverage Results" MODIFIED="1411608908094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__jobseekers_controller_test___direwolf.coverage" NAME="Run test 'jobseekers_controller_test': direwolf Coverage Results" MODIFIED="1411532565700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
+    <SUITE FILE_PATH="coverage/direwolf@db_schema_cache_clear__direwolf.coverage" NAME="db:schema:cache:clear: direwolf Coverage Results" MODIFIED="1411526209752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@sunspot_solr_start__direwolf.coverage" NAME="sunspot:solr:start: direwolf Coverage Results" MODIFIED="1411608230168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Run_test__jobs_test___direwolf.coverage" NAME="Run test 'jobs_test': direwolf Coverage Results" MODIFIED="1411533902880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Production__direwolf.coverage" NAME="Production: direwolf Coverage Results" MODIFIED="1411890372888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
-    <SUITE FILE_PATH="coverage/direwolf@Run_test__sessions_controller_test___direwolf.coverage" NAME="Run test 'sessions_controller_test': direwolf Coverage Results" MODIFIED="1411533039454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Rails_console__direwolf.coverage" NAME="Rails console: direwolf Coverage Results" MODIFIED="1411705623311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
+    <SUITE FILE_PATH="coverage/direwolf@Run_test__sessions_controller_test___direwolf.coverage" NAME="Run test 'sessions_controller_test': direwolf Coverage Results" MODIFIED="1411533039454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@db_migrate__direwolf.coverage" NAME="db:migrate: direwolf Coverage Results" MODIFIED="1411860912067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
     <SUITE FILE_PATH="coverage/direwolf@Development__direwolf.coverage" NAME="Development: direwolf Coverage Results" MODIFIED="1412032387097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="direwolf" />
   </component>
@@ -53,12 +53,9 @@
       <file leaf-file-name="Rails direwolf: development" pinned="false" current="false" current-in-tab="false">
         <entry file="dbDummy://db-console:/575518d9/7f67196b-3bd2-4d37-b16a-d76e460943c7/">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="119">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
               <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-              <folding>
-                <marker date="0" expanded="true" signature="0:21" placeholder="SELECT * FRO..applies..." />
-                <marker date="0" expanded="true" signature="23:64" placeholder="delete from ..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,9 +65,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.38511327" vertical-offset="17" max-vertical-offset="799">
               <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#tbody#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,11 +73,9 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/jobseekers/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="561">
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="561">
               <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#tbody#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +83,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/jobseekers/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="459">
+            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="459">
               <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
@@ -100,7 +93,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/jobseekers/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="255">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -110,8 +103,8 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/jobs/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.538462" vertical-offset="101" max-vertical-offset="782">
-              <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="867">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -422,7 +415,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs>
-        <env name="RAILS_ENV" value="production" />
+        <env name="RAILS_ENV" value="development" />
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
@@ -731,9 +724,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35139573" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -745,6 +737,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35139573" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3136289" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35139573" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1013,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="818" max-vertical-offset="1207">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="348">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="306">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="459">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20679887" vertical-offset="114" max-vertical-offset="493">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.47826087" vertical-offset="154" max-vertical-offset="527">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,7 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="369">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.519403" vertical-offset="404" max-vertical-offset="833">
           <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,10 +1077,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="119">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding>
-            <marker date="0" expanded="true" signature="0:21" placeholder="SELECT * FRO..applies..." />
-            <marker date="0" expanded="true" signature="23:64" placeholder="delete from ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07763975" vertical-offset="128" max-vertical-offset="476">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobs/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.538462" vertical-offset="101" max-vertical-offset="782">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="867">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1141,7 +1122,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobseekers/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="459">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="459">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding />
         </state>
@@ -1149,11 +1130,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/jobseekers/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="561">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="561">
           <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#tbody#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,9 +1140,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38511327" vertical-offset="17" max-vertical-offset="799">
           <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#tbody#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>

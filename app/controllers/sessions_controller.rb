@@ -29,6 +29,9 @@ class SessionsController < ApplicationController
     if session[:user_role].eql? User.ADM_ROLE
       redirect_to(:action => 'admin_first')
     end
+    if session[:user_role].nil?
+      redirect_to(:action => 'new')
+    end
   end
   def destroy2
     session[:user_id] = nil
