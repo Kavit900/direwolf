@@ -18,7 +18,9 @@ Rails.application.routes.draw do
     get 'logout' => :destroy
     get 'loginagain' => :destroy2
   end
-  root :to => 'sessions#new'
+
+  root :to => 'sessions#index'
+
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
   resources :sessions

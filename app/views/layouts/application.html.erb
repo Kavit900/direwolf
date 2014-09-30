@@ -12,10 +12,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="container">
 <% if !(session[:user_id].nil?) %>
-  <%= link_to 'Profile', edit_user_path(session[:user_id]) %> | <%= link_to 'Logout', logout_path, :method => :delete %>
+   <%= link_to 'Home', root_url %> | <%= link_to 'Profile', edit_user_path(session[:user_id]) %> | <%= link_to 'Logout', logout_path, :method => :delete %>
 <% end %>
-
+    </div>
 <%= yield %>
 
 

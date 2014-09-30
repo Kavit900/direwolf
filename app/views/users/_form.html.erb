@@ -13,43 +13,43 @@
     <% end %>
 
     <div class="user">
-      <%= u.label :name %><br>
+      <%= u.label :name %>
       <%= u.text_field :name %>
     </div>
     <div class="user">
-        <%= u.label :password %><br>
+        <%= u.label :password %>
         <%= u.password_field :password %>
     </div>
 
     <div class="user">
-      <%= u.label :password_confirmation %><br>
+      <%= u.label :password_confirmation %>
       <%= u.password_field :password_confirmation%>
     </div>
     <div class="user">
-      <%= u.label :username %><br>
+      <%= u.label :username %>
       <%= u.text_field :username %>
     </div>
     <div class="user">
-      <%= u.label :email %><br>
+      <%= u.label :email %>
       <%= u.text_field :email %>
     </div>
     <div class="user">
-      <%= u.label :phone %><br>
+      <%= u.label :phone %>
       <%= u.text_field :phone %>
     </div>
     <% if (params[:role].eql?("USR") || (params[:role].nil? && @user.role.nil?)) %>
     <div class="user">
-      <%= u.label :skills %><br>
+      <%= u.label :skills %>
       <%= u.text_area :skills, cols: 80 %>
     </div>
     <div class="user">
-      <%= u.label :resume %><br>
+      <%= u.label :resume %>
       <%= u.text_area :resume, cols: 80 %>
     </div>
     <% end %>
     <% if params[:role].eql?("EMP") %>
         <div class="user">
-          <%= u.label "Contact Name" %><br>
+          <%= u.label "Contact Name" %>
           <%= u.text_field :contactName %>
         </div>
     <% end %>
