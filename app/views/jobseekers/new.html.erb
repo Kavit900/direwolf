@@ -1,5 +1,28 @@
-<h1>New jobseeker</h1>
+<h2>Job Postings</h2>
+<tbody>
+<table style="width:100%" border="1">
+  <tr>
+    <td>ID</td>
+    <td> Title</td>
+    <td> Description</td>
+    <td> App. Deadline</td>
+    <td>Applied or NOT</td>
+  </tr>
 
-<%= render 'form' %>
+  <% @jobs.each do |job|   %>
 
-<%= link_to 'Back', jobseekers_path %>
+
+      <tr>
+        <td><%= job.id %></td>
+        <td><%= job.title %></td>
+        <td><%= job.description %></td>
+        <td><%= job.deadline.strftime("%m/%d/%Y") %></td>
+        <td> bdfd </td>
+
+      </tr>
+
+  <% end %>
+  <%  #end %>
+</table>
+
+</tbody>
