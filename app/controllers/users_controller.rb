@@ -59,8 +59,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @job = Job.find(params[:id])
-    @job.destroy
+    @user = user.find(params[:id])
+    @user.destroy
 
     redirect_to users_path
   end
