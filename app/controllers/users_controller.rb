@@ -59,8 +59,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.isDeleted = true
-    respond_to users_path
+    @job = Job.find(params[:id])
+    @job.destroy
+
+    redirect_to users_path
   end
 
   private
