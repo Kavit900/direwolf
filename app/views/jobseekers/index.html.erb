@@ -31,37 +31,41 @@
                     <% else %>
                         <%= "Undecided" %></td>
                     <% end %>
-                    <% @key1 = job.title %>
-                <% @key2 = job.field_id %>
+                    <% if @key1.nil? then @key1 = job.field_id end %>
+                <% if job.field_id != @key1 then @key2 = job.field_id end%>
             <% end %>
         <% end %>
     <% end %>
     </tr>
 
   </table>
-
-
   </tbody>
 
   <table style="width:100%" border="1">
     <tr><h2> Recommended Jobs </h2></tr>
     <tr>
-      <td>ID</td>
       <td> Title</td>
       <td> Description</td>
       <td> Apply </td>
     </tr>
     <tr>
   <% @jobs.each do |rec| %>
-      <% if rec.title.include?(@key1.to_s) || if rec.field_id == @key2 %>
+      <% #if rec.title.include?(@key1.to_s) || if rec.field_id == @key2 %>
+          <% if rec.field_id == @key1 %>
               <tr>
          <td> <%= rec.title %> </td>
          <td> <%= rec.description %></td>
          <td> <%=  link_to 'Apply', new_apply_path(:job_id => rec.id), class: "btn btn-success"  %></td>
             </tr>
+            <% elsif rec.field_id == @key2 %>
+            <tr>
+              <td> <%= rec.title %> </td>
+              <td> <%= rec.description %></td>
+              <td> <%=  link_to 'Apply', new_apply_path(:job_id => rec.id), class: "btn btn-success"  %></td>
+            </tr>
           <%end%>
 <% end %>
-  <% end %>
+  <%# end %>
       </tr>
       </table>
   </tbody>

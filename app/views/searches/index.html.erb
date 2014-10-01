@@ -12,8 +12,9 @@
 
   </table>
 <%= form_tag search_results_path do %>
-    <%= text_field_tag :keywords, placeholder = "Title" %>
+    <%= text_field_tag :keywords, placeholder = "Title or Description" %>
     <%= submit_tag 'Search' %>
+
 
     <%= render @jobs %>
 
