@@ -8,8 +8,7 @@
     <td> App. Deadline</td>
     <td>Applied or NOT</td>
   </tr>
-
-  <% @jobs.each do |job| %>
+  <%  @jobs.each do |job| unless @ap.include?(job.id)   %>
 
       <tr>
         <td><%= job.id %></td>
@@ -19,6 +18,8 @@
         <td> <%= link_to 'Apply', new_apply_path(:job_id => job.id), class: "btn btn-success"  %> </td>
       </tr>
   <%  end %>
+      <% end %>
+
 </table>
 
 </tbody>

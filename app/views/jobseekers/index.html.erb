@@ -49,7 +49,7 @@
       <td> Apply </td>
     </tr>
     <tr>
-  <% @jobs.each do |rec| %>
+  <% @jobs.each do |rec| unless @ap.include?(rec.id)%>
       <% #if rec.title.include?(@key1.to_s) || if rec.field_id == @key2 %>
           <% if rec.field_id == @key1 %>
               <tr>
@@ -65,7 +65,7 @@
             </tr>
           <%end%>
 <% end %>
-  <%# end %>
+  <% end %>
       </tr>
       </table>
   </tbody>

@@ -4,11 +4,13 @@ class JobseekersController < ApplicationController
     @jobs = Job.all
     @fields = Field.all
     @applies = Apply.all
+    @ap = Apply.pluck(:job_id)
   end
   def new
     @jobs = Job.all
     @fields = Field.all
     @applies = Apply.all
+    @ap = Apply.pluck(:job_id)
   end
 
   def recommend
