@@ -14,3 +14,7 @@
   <%= @job.description %><br>
 </p>
 
+<% if (!(session[:user_id].nil?) && session[:user_role] == "USR") then %>
+<%= link_to 'Apply', new_apply_path('job_id' => @job.id), class: "btn btn-success" %>
+<% end %>
+
