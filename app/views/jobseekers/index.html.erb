@@ -54,6 +54,7 @@
   <% @jobs.each do |rec| unless @ap.include?(rec.id)%>
       <% #if rec.title.include?(@key1.to_s) || if rec.field_id == @key2 %>
           <% if rec.field_id == @key1 && rec.isDeleted == false%>
+                 <% if rec.deadline > Time.now %>
               <tr>
          <td> <%= rec.title %> </td>
          <td> <%= rec.description %></td>
@@ -66,6 +67,7 @@
               <td> <%=  link_to 'Apply', new_apply_path(:job_id => rec.id), class: "btn btn-success"  %></td>
             </tr>
           <%end%>
+                <% end %>
 <% end %>
   <% end %>
       </tr>
