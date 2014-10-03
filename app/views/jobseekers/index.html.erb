@@ -51,7 +51,7 @@
     <tr>
   <% @jobs.each do |rec| unless @ap.include?(rec.id)%>
       <% #if rec.title.include?(@key1.to_s) || if rec.field_id == @key2 %>
-          <% if rec.field_id == @key1 %>
+          <% if rec.field_id == @key1 && rec.isDeleted == false%>
               <tr>
          <td> <%= rec.title %> </td>
          <td> <%= rec.description %></td>

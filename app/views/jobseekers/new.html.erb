@@ -8,8 +8,8 @@
     <td> App. Deadline</td>
     <td>Applied or NOT</td>
   </tr>
-  <%  @jobs.each do |job| unless @ap.include?(job.id)   %>
-
+  <%  @jobs.each do |job| unless @ap.include?(job.id)%>
+        <% if job.isDeleted == false %>
       <tr>
         <td><%= job.id %></td>
         <td><%= job.title %></td>
@@ -17,6 +17,7 @@
         <td><%= job.deadline.strftime("%m/%d/%Y") %></td>
         <td> <%= link_to 'Apply', new_apply_path(:job_id => job.id), class: "btn btn-success"  %> </td>
       </tr>
+              <% end %>
   <%  end %>
       <% end %>
 
