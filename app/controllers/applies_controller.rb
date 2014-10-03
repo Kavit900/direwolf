@@ -77,7 +77,7 @@ class AppliesController < ApplicationController
   def destroy
     @apply.destroy
     respond_to do |format|
-      format.html { redirect_to applies_url, notice: 'Apply was successfully destroyed.' }
+      format.html { redirect_to :root, alert: 'Application was successfully withdrawn.' }
       format.json { head :no_content }
     end
   end
