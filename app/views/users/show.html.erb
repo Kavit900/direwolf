@@ -12,11 +12,11 @@
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <% if @user.role == "USR" && @user.updated_at < 20.minutes.ago %>
-    <%= link_to 'Back', controller: 'jobseekers'  %>
+    <%= link_to 'Back', root_url  %>
 <% elsif @user.role == "EMP"  %>
-    <%=  link_to 'Back', "/sessions/employer_first/" %>
+    <%=  link_to 'Back', root_url %>
 <% else %>
-    <%= link_to 'Back', "/sessions/new.html.erb/"  %>
+    <%= link_to 'Back', root_url  %>
 <% end %>
 
 
