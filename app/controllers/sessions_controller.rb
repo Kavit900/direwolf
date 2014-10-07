@@ -6,9 +6,13 @@ class SessionsController < ApplicationController
   def create
       user = User.find_by_username(params[:username])
       if (!user.nil? and user.authenticate(params[:password]))
-        session[:user_id] = user.id
-        session[:user_role] = user.role
-        redirect_to "/sessions"
+        if (user.isDeleted) then
+          redirect_to login_url, alert: "We're sorry your account has been disabled. Please contact your administrator to reactive it"
+        else
+          session[:user_id] = user.id
+          session[:user_role] = user.role
+          redirect_to "/sessions"
+        end
       else
         redirect_to login_url, alert: "Invalid username/password combination"
       end
@@ -32,11 +36,6 @@ class SessionsController < ApplicationController
     if session[:user_role].nil?
       redirect_to(:action => 'new')
     end
-  end
-  def destroy2
-    session[:user_id] = nil
-    session[:user_role] = nil
-    redirect_to login_url, alert: "Log in again!"
   end
   def destroy
     session[:user_id] = nil

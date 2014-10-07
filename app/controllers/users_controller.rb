@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.where("isDeleted = 'f'")
   end
 
   # GET /users/new
@@ -59,10 +59,25 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = user.find(params[:id])
-    @user.destroy
+    @user = User.find(params[:id])
 
-    redirect_to users_path
+    # archive the jobs associated with this employer
+    @jobs = Job.where("employee_id = ? and isDeleted = 'f'", @user.id)
+    if (!@jobs.nil?) then
+      @jobs.each do |j|
+        j.isDeleted = true;
+        j.save
+      end
+    end
+    @user.isDeleted = true
+
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to users_path, notice: 'User was successfully removed.' }
+      end
+    end
+
+
   end
 
   private

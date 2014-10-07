@@ -16,7 +16,6 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
     get 'logout' => :destroy
-    get 'loginagain' => :destroy2
   end
 
   root :to => 'sessions#index'
