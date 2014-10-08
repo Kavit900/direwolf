@@ -13,9 +13,8 @@
   </table>
 <%= form_tag search_results_path do %>
     <%= text_field_tag :keywords, placeholder = "Title or Description" %>
-    
-    <%= submit_tag 'Search' %>
-
+    <%= select_tag(:field_id, options_for_select([['', 0]]) + options_from_collection_for_select(Field.all, :id, :name,  params[:field_id])) %>
+<%= submit_tag 'Search' %>
 
     <%= render @jobs %>
 

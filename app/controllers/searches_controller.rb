@@ -16,7 +16,10 @@ class SearchesController < ApplicationController
   def search_results
 # Here we will be using the Job Model to actually search.
 keywords = "%" + params[:keywords] + "%"
-    @jobs = Job.where("title LIKE ? OR description LIKE ?", keywords , keywords)
-  end
+field_id = "%" + params[:field_id] + "%"
+  @jobs = Job.where("title LIKE ? OR description LIKE ? OR field_id LIKE ?", keywords , keywords, field_id)
+      end
+
+
 
 end
